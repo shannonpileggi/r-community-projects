@@ -1,5 +1,5 @@
 ---
-title: "A job interview presentation inspired by the R community"
+title: "Completing projects with the R community"
 subtitle: "How #tidytuesday and twitter helped me secure a job offer"
 author: "Shannon Pileggi"
 institute: "R-Ladies Miami Meet-up"
@@ -26,6 +26,7 @@ output:
 library(tidyverse)
 library(palmerpenguins)
 library(fontawesome)
+library(calendR)
 
 # preset code chunk options
 knitr::opts_chunk$set(dpi = 300,            # ensures high resolution images
@@ -40,8 +41,6 @@ background-position: bottom
 background-size: cover
 
 # `r rmarkdown::metadata$title`
-
-## `r rmarkdown::metadata$subtitle`
 
 ### `r rmarkdown::metadata$author`
 
@@ -91,7 +90,8 @@ width="150px"
 ]]
 
 .footnote[
-This R-Ladies themed xaringan template was kindly developed by [Silvia Canelón](https://silvia.rbind.io/). To use: **usethis::use_course("spcanelon/RLadies-xaringan-template")**
+This R-Ladies themed xaringan template was kindly developed by [Silvia Canelón](https://silvia.rbind.io/). You can copy these slides with  **usethis::use_course("spcanelon/RLadies-xaringan-template")**, and learn
+how to deploy them to GitHub Pages in [silvia.rbind.io/2021-03-16-deploying-xaringan-slides](https://silvia.rbind.io/2021-03-16-deploying-xaringan-slides).
 ]
 
 
@@ -111,10 +111,38 @@ width="150px"
 [`r fontawesome::fa("linkedin", fill = "#FFFFFF")` linkedin.com/in/shannon-m-pileggi/](https://www.linkedin.com/in/shannon-m-pileggi/)
 
 
+Presentation based on the Aug 30, 2020 blog post:
+
+_A job interview presentation inspired by the R community: How TidyTuesday and Twitter helped me secure a job offer_ 
+
+[https://www.pipinghotdata.com/posts/2020-08-30-a-job-interview-presentation-inspired-by-the-r-community/](https://www.pipinghotdata.com/posts/2020-08-30-a-job-interview-presentation-inspired-by-the-r-community/)
+
 ???
 This slide uses:
 - the `inverse`, `middle`, and `center` slide classes
 - an image inserted with html
+
+
+---
+
+# Life changes
+
+---
+
+# Timeline
+
+```{r echo=FALSE}
+calendR::calendR(year = 2018, month = 12,
+        special.days = c(3, 5, 17),
+        special.col = "#bfe2f2",
+        low.col = "white",
+        text = c("Applied", "Phone screen", "Interview"), 
+        text.pos = c(3, 5, 17),       # Days of the month where to put the texts 
+        text.size = 4.5,               # Font size of the text
+        text.col = 4 )
+```
+
+
 
 ---
 
