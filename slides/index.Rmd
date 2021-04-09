@@ -14,6 +14,7 @@ output:
       - css/rladies-mod.css
     seal: false
     nature:
+      beforeInit: "macros.js"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -126,6 +127,27 @@ This slide uses:
 ---
 
 # Life changes
+
+.right-column[
+![:scale 85%](img/residences_flat.png)
+]
+
+--
+
+.footnote[
+Map adapted from [https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction/](https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction/)
+]
+
+--
+
+.left-column[
+![:scale 100%](img/avery_carsen_circle.png)
+]
+
+
+
+
+
 
 ---
 
