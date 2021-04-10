@@ -99,16 +99,16 @@ class: bg-main5 split-20
 
 .row[.content.nopadding[
 .fig90[![](img/avery_carsen_circle.png)]
-]] <br><br>
+]] <br>
 
-### Map adapted from [`r fontawesome::fa("link", fill = "#FFFFFF")` GGanimating a geographic introduction](https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction/)
+### Map adapted from <br><br> [`r fontawesome::fa("link", fill = "#FFFFFF")` GGanimating <br> a geographic introduction](https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction/)
 
 ]]
 
 .column.bg-main5[.content.center[
 
 .row[.content.nopadding[
-.fig90[![](img/residences_flat.png)]
+.img-fill[![](img/residences_flat_3.png)]
 ]]
 
 ]]
