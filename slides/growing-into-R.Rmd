@@ -149,6 +149,27 @@ class: bg-main5 split-20
 
 
 ---
+layout: false
+class: bg-main5 split-70 
+
+.column.bg-main5[.content.vmiddle.center[
+
+# Job interview <br><br>
+
+.row[.content.nopadding[
+.fig90[![](img/example_calendar2.png)]
+]]
+
+]]
+
+.column.bg-main4[.content.center[
+
+## test
+
+]]
+
+
+---
 
 layout: true
 class: split-two with-thick-border border-white

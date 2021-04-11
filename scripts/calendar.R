@@ -5,6 +5,7 @@ library(ggforce)
 library(ggchicklet)
 library(extrafont)
 library(lubridate)
+library(ggtext)
 
 extrafont::loadfonts(device = "win")
 
@@ -78,13 +79,13 @@ my_ggcal <- function(dates, fills) {
     mutate(dow = factor(dow, levels = 0:6, labels = c("SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"))) %>% 
     ggplot(aes(1, 1)) +
     geom_chicklet(color="#562457", aes(fill = event), width = 1, show.legend = F) +
-    geom_text(aes(label = day, color = event), nudge_x = -0.3, nudge_y = -0.2, size = 1.5, show.legend = F) +
-    geom_text(aes(label = event_description), color = "white", size = 2.5, nudge_y = -0.6) +
+    geom_text(aes(label = day, color = event), nudge_x = -0.3, nudge_y = -0.2, size = 1.5, show.legend = F, family = "Lato") +
+    geom_text(aes(label = event_description), color = "white", size = 1.8, nudge_y = -0.6, family = "Permanent Marker") +
     facet_grid(monthweek ~ dow) +
     theme(panel.background=element_rect(fill=NA, color=NA),
           strip.background = element_rect(fill = NA, color = NA),
           strip.text.x = element_text(color = "#562457",
-                                      family = "Permanent Marker"),
+                                      family = "Lato"),
           strip.text.y = element_blank(),
           legend.title = element_blank(),
           axis.ticks = element_blank(),
@@ -92,15 +93,17 @@ my_ggcal <- function(dates, fills) {
           axis.text = element_blank(),
           plot.title.position ="plot",
           plot.title = element_text(
-            color = "#562457"
+            color = "#562457",
+            family = "Permanent Marker"
           ),
-          panel.spacing=unit(0, "lines")) +
+          panel.spacing=unit(0, "lines"),
+          plot.margin = margin(1, 1, 1, 1, "cm")) +
     ggtitle("December 2018") +
     scale_fill_manual(values = tile_colors) +
     scale_color_manual(values = text_colors)
 }
 
-ggsave(here::here("slides", "img", "example_calendar.png"))
+ggsave(here::here("slides", "img", "example_calendar2.png"))
 
 my_ggcal(my_calendar[["date"]], my_calendar[["event"]])
 
