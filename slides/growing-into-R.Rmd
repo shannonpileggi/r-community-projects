@@ -157,14 +157,24 @@ class: bg-main5 split-70
 # Job interview <br><br>
 
 .row[.content.nopadding[
-.fig90[![](img/example_calendar2.png)]
+.fig90[![](img/example_calendar3.png)]
 ]]
 
 ]]
 
-.column.bg-main4[.content.center[
+.column.bg-main4[.content.vmiddle.center[
 
-## test
+# Job interview<br>presentation instructions
+
+<br><br>
+
+### 20 minutes 
+
+### focuses on market research
+
+### innovative
+
+### proud of
 
 ]]
 
@@ -198,7 +208,6 @@ class: split-two with-thick-border border-white
 
 ??? INTRODUCE CREATOR
 
----
 
 ---
 count: false
